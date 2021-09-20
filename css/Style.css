@@ -1,0 +1,292 @@
+/* Styling section */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
+    color: #333333;
+    overflow-x: hidden;
+}
+.container{
+    margin: auto;
+}
+.text-primary{
+    color: #3693ff;
+}
+/* navbar section */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: #333333;
+    color: #fff;
+    padding: 1.5rem 8rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 3px solid #3693ff;
+}
+.navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+     
+}
+.navbar h2 a{
+    color: white;
+    text-decoration: none;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 1.3rem;
+    margin: 0 0.5rem;
+    border-radius: 5px;
+    transition: background-color 1s;
+}
+.navbar ul li a:hover{
+    background: #1b9bff;
+}
+/* content part */
+.content{
+    background: url(../img/kakashii.jpg) no-repeat center center/cover;
+    height: 120vh;
+}
+.content-showcase{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 81px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(red, green, blue, alpha);
+    color: rgb(233, 8, 8);
+}
+.content-showcase h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.content-showcase .CV{
+    font-size: 1.5rem;
+    padding: 1rem 10rem;
+}
+.CV{
+    color: #3693ff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1rem 2rem;
+    border: 1px solid #3693ff;
+    border-radius: 10px;
+}
+.footer{
+    background: #333333;
+    color: #ffffff;
+    position: relative;
+    height: 150px;
+}
+.footer-content{
+    border: 0.5px solid #333333;
+    height: 70px;
+}
+.footer-content h4{
+    text-align: center;
+    color: white;
+    width: 100%;
+    position: absolute;
+    padding-top: 10px;
+}
+.footer-bottom{
+    background: #333333;
+    color: #fff;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 20px;
+}
+/* About me*/
+.content{
+    padding: 100px 15px;
+    background-color: #fff;
+}
+
+.content .section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 35px;
+}
+
+.content .section-title h1{
+    display: inline-block;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700px;
+    margin: 0 0 10px;
+    color: seagreen;
+    position: relative;
+
+}
+.content .section-title h1::before{
+    content: '';
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 30%;
+    background-color: #febd01;
+    bottom: 0px;
+}
+.content .section-title p.small{
+    display: block;
+    text-transform: uppercase;
+    color: springgreen;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content .about-content .img{
+    flex: 33.33%;
+    max-width: 33.33%;
+
+}
+.content .about-content .img img{
+    width: 100%;
+    display: block;
+    border-radius: 0%;
+
+}
+.content .about-content .text{
+    background-color: burlywood;
+    float: right; 
+    flex: 0 0 66.66%;
+    max-width: 66.66%;
+    padding: 0; 
+    padding-right: 40px;
+}
+
+.content .about-content .text h4{
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 10px;
+    color: #000000;
+}
+.content .about-content .text h6{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 5px;
+    color: #000000;
+}
+.content .about-content .text p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+
+}
+.content .about-content .text .info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.content .about-content .text .info .list{
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #d2eed2;
+    padding: 8.5px;
+}
+/* row1*/
+.row1{
+    text-align: center;
+    text-align: justify;
+    background-color: burlywood;
+    
+    float: center;
+}
+.row1 h1 ul{
+    text-align: center;
+    font-size: 35px;
+    position: relative;
+    padding: 5%, 5%, 5%, 5%;
+}
+.row2{
+    background-color: burlywood;
+    
+}
+.right{
+background-color: burlywood;
+flex: 50%;
+}
+/* Blog */
+.middle{
+    background: aquamarine;
+    height: 90vh;
+}
+.descrip{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.descrip h1{
+    color: #cc2828;
+}
+
+/* research */
+.reference h1{
+    background-color: aquamarine;
+}
+/* Contact us */
+.title{
+    margin-top: 100px;
+    color: red;
+}
+
+.title h1{
+    font-size: 32px;
+    line-height: 10px;
+}
+
+title h2{
+    font-size: 16px;
+}
+form{
+    margin-top: 50px;
+}
+.top .box{
+    background: url(../img/contact.jpg) no-repeat center center/cover;
+    height: 150vh;
+}
+input[type=text], select, textarea{
+    width: 30%;
+    padding: 12px;
+    border: 1px solid #cc2828;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]{
+    background-color: #d13232;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.box{
+    text-align: center;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

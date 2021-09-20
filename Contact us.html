@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/Style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="navbar">
+                <h2><a href="Home.html"><span class="text-primary">Sanjaya Kumar </span>Gurung</a></h2>
+                
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="CV.html">CV</a></li>
+                    <li><a href="Blog.html">Blog</a></li>
+                    <li><a href="Research.html">Research</a></li>
+                    <li><a href="Contact us.html">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="box">
+            <div class="title">
+                <h1>Contact us</h1>
+                <h2>If you have got any queries, please fill it..</h2>
+            </div>
+            
+                <form name="form" onsubmit="validateForm()">
+                    <label for="Fname"><p style="color: red;">First Name:</p></label><br>
+                    <input type="text" id="fname" name="firstname" placeholder="Your First Name.."><br>
+                    <label for="lname"><p style="color: red;">Last Name:</p></label><br>
+                    <input type="text" id="lname" name="lastname" placeholder="Your Last Name.."><br>
+                    <label for="country"><p style="color: red;">Country:</p></label><br>
+                    <select name="country" id="country"><br>
+                        <option value="nepal">Nepal</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="usa">USA</option>
+                    </select><br>
+                    <label for="message"><p style="color: red;">Message:</p></label><br>
+                    <textarea name="message" id="message" cols="30" rows="10" name="message" placeholder="Write messages here.." style="height: 200px;"></textarea><br>
+                    <input type="Submit" value="Submit">
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script>
+        function validateForm(){
+            var fn = document.forms['form']['firstname'].value;
+            var ln = document.forms['form']['lastname'].value;
+            var msg = document.forms['form']['message'].value;
+
+            if(fn==""||ln==""||msg==""){
+                alert("Sorry, Please fill all the feilds.")
+            }else{
+                alert("Thank You!")
+            }
+        }
+    </script>
+</body>
+</html>
